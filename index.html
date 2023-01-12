@@ -2,6 +2,7 @@
     <head>
         <title> Barber & Hair Studio</title>
         <link rel="stylesheet" href="style.css"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
     <section id="banner">
@@ -38,19 +39,13 @@
         menuBtn.onclick = function (){
             if(sideNav.style.right == "-250px"){
                 sideNav.style.right = "0";
+                menu.src = "images/close.png"
             }
             else{
-                sideNav.style.right = "-250";
+                sideNav.style.right = "-250px";
+                menu.src = "images/menu.png"
             }
         }
-
-       
-        
     </script>
-
-
-
-
-
     </body> 
 </html>

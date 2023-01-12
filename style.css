@@ -4,7 +4,7 @@
 }
 
 #banner{ 
-    background: linear-gradient(rgba(0,0,0,0.5), #009688), url(images/banner.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), #c6922b), url(images/banner.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -72,10 +72,11 @@
     width: 200px;
     height: 100vh;
     position: fixed;
-    right:0;
+    right: -250px;
     top:0;
-    background-color: #009688;
+    background-color: #c6922b;
     z-index: 2;
+    transition: 0.5s;
  }
 
  nav ul li{
@@ -91,7 +92,7 @@
  #menuBtn{
    width: 50px;
    height: 50px;
-   background: #009688;
+   background: #c6922b;
    text-align: center;
    position: fixed;
    right: 30px;
@@ -104,4 +105,13 @@
  #menuBtn img{
    width: 20px;
    margin-top: 15px;
+ }
+
+ @media screen and (max-width: 770px) {
+   .banner-text h1{
+      font-size: 44px;
+   } 
+   .banner-btn a{
+      display: block;
+      margin: 20px auto ;
  }
